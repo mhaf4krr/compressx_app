@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IMPORTANT SECURITY SETUP IN META TAG -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header class="header flex-container">
+       
+            <i class="fas fa-images image-logo"></i>
+            <h5>compressX</h5>
+      
+    </header>
+
+    <main class="main">
+        <p class="main_text">Choose Images to be Compressed</p>
+
+        <form class="form">
+            <div class="form_row">
+                <span>files: </span>
+                <input type="file" name="files" id="files" accept="image/*" multiple>
+            </div>
+
+            <div class="form_row">
+                <span>Compression</span>
+                <input type="range" name="quality" id="quality_slider"  value="0" oninput="updateQualityValue(this.value)">
+                <span id="quality_value">0%</span>
+            </div>
+
+            <div class="form_row output_path">
+                <span class="green_text">OUTPUT:</span> <span id="output_path"></span>
+            </div>
+
+            <div class="form_row">
+                <input type="submit" class="btn submit_btn" value="COMPRESS"> <input type="reset" class="btn reset_btn" value="CLEAR">
+            </div>
+        </form>
+    </main>
+
+    <main class="status">
+        <div class="file_progress">
+           <h5> Files Information</h5>
+        </div>
+
+        <ul class="file_list">
+            
+            
+        </ul>
+    </main>
+
+    <div class="screen_loading">
+        <div class="logo_loading">
+            <img src="./assets/images/loader.gif" alt="">
+        </div>
+    </div>
+
+    <audio id="audio_player"></audio>
+
+
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/renderer.js"></script>
+</html>

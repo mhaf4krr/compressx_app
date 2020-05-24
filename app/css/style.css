@@ -1,0 +1,173 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+:root {
+	--green-color:rgb(20, 185, 20);
+}
+
+html {
+	font-size: 10px;
+	height:100%
+}
+
+body{
+	font-family: monospace;
+	font-size: 10px;
+	background-color: rgb(44, 41, 41);
+	position: relative;
+	height:100%;
+}
+
+header {
+	height:5rem;
+	background-color: rgb(20, 185, 20);
+	font-size: 2rem;
+	
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items: center;
+	align-content: center;
+	
+}
+
+.image-logo {
+	margin-right:.9rem
+}
+
+main.main {
+	width:90%;
+	margin:auto auto;
+
+	
+	margin-top:3rem;
+	color:white;
+	font-size:1.7rem;
+}
+
+.main_text {
+	text-align: center;
+}
+
+.form {
+	margin-top:3rem;
+}
+
+.form_row {
+	text-align: center;
+	background-color: rgb(65, 61, 61);
+	padding:2.5rem 0rem
+}
+
+#files {
+	
+	outline-style: groove;
+	outline-width: 5px;
+	outline-color: white;
+}
+
+
+.output_path {
+	font-size: 1.2rem;
+}
+
+.green_text{
+	color:var(--green-color)
+}
+
+#output_path{
+	font-weight: bold;
+}
+
+.btn {
+	padding:1rem 2rem;
+	font-family: inherit;
+	font-weight: bolder;
+}
+
+.submit_btn {
+	background-color: var(--green-color);
+	color:black;
+}
+
+.reset_btn {
+	background-color: rgb(201, 32, 32);
+	color:white
+}
+
+#quality_slider {
+	background:var(--green-color);
+	color:var(--green-color)
+}
+
+main.status {
+	
+	height:10rem;
+	width:90%;
+	margin:auto auto;
+	margin-top:3rem;
+
+}
+
+
+div.file_progress {
+	background-color:white;
+
+	width:100%;
+	font-size:1.6rem;
+	font-weight: bolder;
+	display: flex;
+	height:5rem;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+ul.file_list {
+	list-style: none;
+	background-color: rgb(41, 38, 38);
+}
+
+ul.file_list li {
+	font-size:1.2rem;
+	padding:1.5rem 0;
+	text-align: center;
+	display:block;
+	font-size: 1.5rem;
+	color:white;
+	text-align: left;
+	margin-left:1.5rem;
+	border-bottom: 2px solid black;
+}
+
+li i {
+	font-size: 2rem;
+	color:white
+}
+
+.screen_loading {
+	height:100%;
+	width:100%;
+	background-color: rgba(0, 0, 0, 0.74);
+	position: absolute;
+	top:0;
+	left:0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	display:none
+}
+
+
+.logo_loading {
+	height:40px;
+	width:40px;
+}
+
+

@@ -1,0 +1,11 @@
+{
+    "dest": "dist/installers/",
+    "icon": "app/assets/icons/linux/icon.png",
+    "arch":"amd64",
+    "categories": [
+      "Utility"
+    ],
+    "lintianOverrides": [
+      "changelog-file-missing-in-native-package"
+    ]
+}
